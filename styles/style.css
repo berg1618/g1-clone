@@ -11,7 +11,8 @@ header {
     background-color: #702d2d;
     color: #fff;
     padding: 10px 0;
-    text-align: center;
+    display: flex;
+    
 }
 
 nav ul {
@@ -28,7 +29,7 @@ nav a {
     text-decoration: none;
 }
 
-main {
+section {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -43,7 +44,7 @@ main {
 footer {
     background-color: #702d2d;
     color: #fff;
-    text-align: center;
+    display: flex;
     padding: 10px 0;
 }
 
@@ -60,4 +61,9 @@ footer {
     .noticia {
         padding: 5px;
     }
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }

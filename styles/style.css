@@ -1,4 +1,8 @@
-body, h1, h2, p, ul {
+body,
+h1,
+h2,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -7,12 +11,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
+#header {
     background-color: #702d2d;
     color: #fff;
     padding: 10px 0;
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+
 }
 
 nav ul {
@@ -39,12 +45,14 @@ section {
     border: 1px solid #702d2d;
     padding: 10px;
     margin-bottom: 20px;
+    clear: right;
 }
 
-footer {
+#footer {
     background-color: #702d2d;
     color: #fff;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1;
     padding: 10px 0;
 }
 
@@ -52,12 +60,12 @@ footer {
     header {
         padding: 5px 0;
     }
-    
+
     nav ul li {
         display: block;
         margin: 10px 0;
     }
-    
+
     .noticia {
         padding: 5px;
     }
@@ -66,4 +74,9 @@ footer {
 img {
     width: 100px;
     height: 100px;
+    float: left;
+}
+
+login {
+    color: #fff;
 }

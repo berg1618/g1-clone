@@ -34,15 +34,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    padding: 5px 0;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
   .noticia {
     padding: 5px;
   }

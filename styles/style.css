@@ -18,6 +18,7 @@ section {
   display: grid;
   grid-template-columns: 200px 200px;
   grid-template-rows: 200px 200px;
+  background-color: #7baf6e;
 }
 
 .noticia {
@@ -49,4 +50,11 @@ main {
   background-image: url("../assets/flamengo.jpeg");
   color: #fff;
   margin: 10px;
+  position: absolute;
+  height: 400px;
+  width: 400px;
+}
+
+.card {
+  
 }

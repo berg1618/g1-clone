@@ -16,8 +16,8 @@ section {
   margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: 200px 200px;
+  grid-template-columns: 400px;
+  grid-template-rows: 400px;
   background-color: #7baf6e;
 }
 
@@ -56,5 +56,15 @@ main {
 }
 
 .card {
+  position: absolute;
+  margin: auto;
+  height: 200px;
+  width: 200px;
   
+}
+
+.composed-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }

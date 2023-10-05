@@ -7,12 +7,11 @@
 
 nav ul {
   list-style: none;
-  
 }
 
 nav ul li {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 33%);
   margin-right: 20px;
 }
 

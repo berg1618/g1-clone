@@ -43,28 +43,32 @@ main {
 .img-noticia {
   width: 100px;
   height: 100px;
-  float: left;
+}
+
+.composed-cards {
+  float: right;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: end;
 }
 
 .noticia-card {
+  grid-column: 1;
+  grid-row: 1;
   background-image: url("../assets/flamengo.jpeg");
   color: #fff;
   margin: 10px;
-  position: absolute;
   height: 400px;
   width: 400px;
 }
 
 .card {
-  position: absolute;
-  margin: auto;
+  grid-column: 1;
+  grid-row: 1 1;
+  background-color: #ccc;
+  margin: 10px;
   height: 200px;
   width: 200px;
-  
 }
 
-.composed-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-}

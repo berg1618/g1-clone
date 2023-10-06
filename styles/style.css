@@ -63,7 +63,7 @@ main {
 
 .card {
   border-radius: 10px;
-  grid-column: 1;
+  grid-column: 1 1;
   grid-row: 1 1;
   background-color: #ccc;
   margin: 10px;

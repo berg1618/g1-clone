@@ -2,8 +2,6 @@
   background-color: #702d2d;
   color: #fff;
   padding: 10px 0;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
   text-align: center;
 }
 
@@ -12,17 +10,21 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
   margin-right: 20px;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  
 }
 
 login {
   color: #fff;
+  position: fixed;
+  padding-top: 30px;
 }
 
 #footer {
@@ -31,4 +33,15 @@ login {
   display: grid;
   grid-template-columns: 1;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 5px 0;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 10px 0;
+  }
 }

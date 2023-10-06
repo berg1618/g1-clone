@@ -17,11 +17,10 @@ section {
   padding: 20px;
   display: grid;
   grid-template-columns: 200px 200px;
-  grid-template-rows: 200px 200px;
+  grid-template-rows: 400px;
 }
 
 .noticia {
-  border: 1px solid #702d2d;
   padding: 10px;
   margin-bottom: 20px;
   justify-content: left;
@@ -34,15 +33,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    padding: 5px 0;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
   .noticia {
     padding: 5px;
   }
@@ -51,11 +41,33 @@ main {
 .img-noticia {
   width: 100px;
   height: 100px;
-  float: left;
+}
+
+.composed-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
 }
 
 .noticia-card {
+  grid-column: 1;
+  grid-row: 1;
   background-image: url("../assets/flamengo.jpeg");
   color: #fff;
   margin: 10px;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
 }
+
+.card {
+  border-radius: 10px;
+  grid-column: 1 1;
+  grid-row: 1 1;
+  background-color: #ccc;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+

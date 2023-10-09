@@ -44,4 +44,8 @@ login {
     display: inline-block;
     margin: 10px 0;
   }
+  #footer{
+    position: relative;
+    top: 150px;
+  }
 }

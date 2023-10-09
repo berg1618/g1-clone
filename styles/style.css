@@ -33,8 +33,27 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  section .card1 {
+    top: 400px;
+    left: 0;
+    position: relative;
+    width: 150px;
+  }
+  section .card2 {
+    top: 400px;
+    position: relative;
+    width: 150px;
+  }
+  .composed-cards {
+    position: absolute;
+  }
   .noticia {
+    position: relative;
+    top: 150px;
     padding: 5px;
+  }
+  .noticia-card {
+    width: 250px;
   }
 }
 

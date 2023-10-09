@@ -18,7 +18,6 @@ nav ul li {
 nav a {
   color: #fff;
   text-decoration: none;
-  
 }
 
 login {
@@ -44,7 +43,7 @@ login {
     display: inline-block;
     margin: 10px 0;
   }
-  #footer{
+  #footer {
     position: relative;
     top: 150px;
   }

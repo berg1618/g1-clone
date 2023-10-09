@@ -13,6 +13,7 @@ body {
 
 section {
   max-width: 800px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 20px;
   display: grid;
@@ -33,6 +34,20 @@ main {
 }
 
 @media screen and (max-width: 600px) {
+  section .card1 {
+    top: 400px;
+    left: 0;
+    position: relative;
+  }
+  section .card2 {
+    top: 400px;
+    position: relative;
+  }
+  .composed-cards {
+    left: 0;
+    position: relative;
+
+  }
   .noticia {
     padding: 5px;
   }

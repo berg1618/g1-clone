@@ -20,6 +20,10 @@ section {
   grid-template-rows: 400px;
 }
 
+.title {
+  overflow-wrap: break-word;
+}
+
 .noticia {
   padding: 10px;
   margin-bottom: 20px;

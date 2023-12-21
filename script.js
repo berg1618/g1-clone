@@ -1,30 +1,20 @@
-async function fetchAnimeNews() {
-    const response = await fetch(`https://newsapi.org/v2/everything?language=pt&q=anime&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a`);
-    if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const data = await response.json();
+import express from 'express';
+const app = express()
+const port = 3000
 
-    updateNews(data);
-}
+app.get('/noticias', async (req, res) => {
+    try {
+        const response = await fetch(`https://newsapi.org/v2/everything?language=pt&q=economia&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a`);
+        if (!response.ok) {
+            throw new Error(`chave inválida! status: ${response.status}`);
+        }
+        const resultJson = await response.json();
+        res.send(resultJson)
+    } catch (error) {
+        throw new Error(`Nada encontrado! status: ${response.status}`);
+    };
+})
 
-function updateNews(data) {
-    const elems = document.getElementsByClassName("title");
-
-    const paragraphs = document.getElementsByClassName('content');
-
-
-    for (let i = 0; i < elems.length; i++) {
-        const elem = elems[i];
-        elem.innerHTML =  data['articles'][i]['title'];
-
-        const p = paragraphs[i];
-        p.innerHTML =  data['articles'][i]['content'];
-
-    }
-
-}
-
-fetchAnimeNews().catch((error) => {
-    console.error(error);
-});
+app.listen(port, () => {
+    console.log(`g2 back is listening on port ${port}`)
+})

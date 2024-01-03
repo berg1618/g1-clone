@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1.500;1,700;1,900&display=suap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #C4170C;
+    --secondary-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.section-wrapper {
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.title {
+  color: #333;
+}
+
+.content {
+  color: #666;
+}
+
+.composed-cards {
+  display: grid;
+  justify-content: space-between;
+}
+
+
+.logo-projeto {
+  position: absolute;
+  left: 25px;
+  top: 13px;
+  margin: 0;
+  height: 30px;
+  width: 100px;
+  font-size: 37px;
+  -webkit-user-select: none;
+  font-weight: bold;
+  color: var(--secondary-color);
+  z-index: 1;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+
+a:hover {
+  color: #702d2d;
+  transition: all 0.6s;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  font-family: 'Muli', sans-serif;
+  font-size: 15px;
+  display: flex;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  position: absolute;
+  background-color: #ab1616;
+  padding: 10px;
+  border-radius: 5px;
+  top: 13px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+form input,
+form button {
+  background: none;
+  outline: none;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+
+input::placeholder {
+  color: var(--secondary-color);
+}
+
+form button {
+  cursor: pointer;
+  background: none;
+  color: var(--secondary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  bottom: 0;
+}
+
+.login-btn {
+  font-size: 18px;
+  position: absolute;
+  right: 310px;
+  top: 13px;
+  height: 39px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ab1616;
+  border-radius: 5px;
+  padding: 0 15px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.conta-nome {
+font-family: 'Muli', sans-serif;
+font-size: 15px;
+padding: 0px 5px 0;
+text-decoration: none;
+font-weight: bold;
+color: var(--secondary-color);
+}
+
+.img-noticia {
+  height: 200px;
+  width: 300px;
+}
+
+.login-btn:hover{
+  color: #702d2d;
+  transition: all 0.6s;
+  
+}
+.logo-projeto-footer {
+  font-size: 27px;
+  -webkit-user-select: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  /* ... */
+}
+
+.footer {
+  position: relative;
+  top: 150px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo-projeto {
+    display: grid;
+    position: absolute;
+    left: 20pt;
+    top: 14px;
+    margin: 0;
+    height: 30px;
+    width: 100px;
+    font-size: 40px;
+    -webkit-user-select: none;
+    font-weight: bold;
+    color: var(--secondary-color);
+    z-index: 1;
+  }
+  
+  header {
+    padding: 30px;
+    display:grid;
+    justify-content: start;
+    
+  }
+  form input{
+    font-size: 0px;
+    border-radius: 10px;
+  }
+  form button
+  {
+    background: none;
+    outline: none;
+    font-size: 11px;
+    margin-right: -13px;
+    padding-top: 10px;
+  }
+  nav ul {
+    padding-left: 30px;
+  }
+  
+  nav ul li {
+    font-size: 13px;
+    display: inline-block;
+    margin: 10px 5px;
+  }
+  .login-btn,
+  .conta-nome {
+    position: static;
+    width: auto;
+    padding: 3px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 53px;
+    order: 1; 
+    margin: 10px 0 10px;
+    padding: 3px 10px;
+  }
+  .login-btn {
+  right: 20px;
+  }
+  .footer {
+    position: relative;
+    top: 150px;
+  }
+}

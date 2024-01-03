@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>g2 - O portal de notícias do Ifrn</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="shortcut icon" href="../assets/favicon-g2.png" type="assets/g1-favicon.avif">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div id="header"><object type="text/html" data="./layout/header.html"></object></div> -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <a class="logo-projeto" href="/index.html">g2</a>
+            </li>
+            <li>
+            <a href="/index.html">Principal</a>
+            </li>
+            <li>
+            <a href="/pages/noticia.html">Noticias</a>
+            </li>
+            <li>
+            <a href="">Politica</a>
+            </li>
+            <li>
+            <a href="#">Esportes</a>
+            </li>
+        </ul>
+        <form action="#" method="post" class="search-form">
+          <button type="submit"><i class="fas fa-search"></i></button>
+          <input type="text" name="search" id="search" placeholder="BUSCAR" required>
+        </form>
+        <div class="login-btn" onclick="window.location.href='/pages/login.html';">
+          <i class="fas fa-user"></i>
+          <a class="conta-nome" href="#">Conta</a>
+        </div>
+      </nav>
+    </header>
+    <section class="section-wrapper">
+      <div class="noticia-card"> 
+        <article class="card">
+          <h2 class="title">Lorem Ipsum</h2>
+          <p class="content">
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit..."
+          </p>
+        </article>
+      </div>
+      <div class="composed-cards">
+        <article class="card card1">
+          <h2 class="title">Lorem Ipsum</h2>
+          <p class="content">
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit..."
+          </p>
+        </article>
+        <article class="card card2">
+          <h2 class="title">Lorem Ipsum</h2>
+          <p class="content">Lorem Ipsum, i gotta feed these folks</p>
+        </article>
+      </div>
+    </section>
+
+    <main>
+      <article class="noticia">
+        <img class="img-noticia" src="./assets/adolescente-fazendo-prova-na-escola-estudante-teste-1572713489023_v2_900x506.jpg.webp" /><img />
+        <a class="title" href="./pages/noticia.html">
+          REDE SOCIAL "X" pode ser banida da EUROPA x
+        </a>
+        <p class="content">
+          REDE SOCIAL "X" pode ser banida da EUROPA Sonia Blota, correspondente
+          da Rádio Bandeirantes, fala sobre a disseminação de fake news pela
+          rede social "X" e o possível banimento.
+        </p>
+      </article>
+
+    </main>
+    <footer>
+      <p class="logo-projeto-footer">g2</p>
+      <br>
+      <p>&copy; 2023 g2</p>
+    </footer>
+  </body>
+  <script type="module" src="./script.js"></script>
+</html>

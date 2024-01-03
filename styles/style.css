@@ -1,0 +1,105 @@
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 400px;
+}
+
+.title {
+  overflow-wrap: break-word;
+}
+
+.noticia {
+  padding: 10px;
+  margin-bottom: 20px;
+  justify-content: left;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  section .card1 {
+    top: 400px;
+    left: 0;
+    position: relative;
+    width: 150px;
+  }
+  section .card2 {
+    top: 400px;
+    position: relative;
+    width: 150px;
+  }
+  .composed-cards {
+    position: absolute;
+  }
+  .noticia {
+    position: relative;
+    top: 150px;
+    padding: 5px;
+  }
+  .noticia-card {
+    width: 250px;
+  }
+}
+
+.img-noticia {
+  width: 100px;
+  height: 100px;
+}
+
+.composed-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
+}
+
+.noticia-card {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url("../assets/flamengo.jpeg");
+  color: #fff;
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card1 {
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 10px;
+  height: 180px;
+  width: 200px;
+  left: 220px;
+  position: relative;
+}
+
+.card2 {
+  border-radius: 10px;
+  background-color: #ccc;
+  margin: 10px;
+  height: 180px;
+  width: 200px;
+  top: 200px;
+  position: relative;
+}

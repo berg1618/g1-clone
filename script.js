@@ -16,6 +16,7 @@ function updateNews(data) {
     const elems = document.getElementsByClassName("title");
     const paragraphs = document.getElementsByClassName('content');
     const cards = document.querySelectorAll('.card');
+    const imgs = document.querySelector('.img-noticia');
 
     for (let i = 0; i < elems.length; i++) {
         const elem = elems[i];
@@ -24,9 +25,11 @@ function updateNews(data) {
         const card = cards[i];
         card.style.backgroundImage = `url(${data['articles'][i]['urlToImage']})`;
 
-
         const p = paragraphs[i];
         p.innerHTML = data['articles'][i]['content'];
+
+        imgs.src = data['articles'][i]['urlToImage'];
+
     }
 
 

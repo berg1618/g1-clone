@@ -1,6 +1,6 @@
 async function fetchIfrnNews() {
     try {
-        const response = await fetch('https://newsapi.org/v2/everything?language=pt&q=neymar&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a');
+        const response = await fetch('https://newsapi.org/v2/everything?language=pt&q=brasileirao&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

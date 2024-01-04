@@ -15,12 +15,15 @@ async function fetchIfrnNews() {
 function updateNews(data) {
     const elems = document.getElementsByClassName("title");
     const paragraphs = document.getElementsByClassName('content');
-
-
+    const cards = document.querySelectorAll('.card');
 
     for (let i = 0; i < elems.length; i++) {
         const elem = elems[i];
         elem.innerHTML = data['articles'][i]['title'];
+
+        const card = cards[i];
+        card.style.backgroundImage = `url(${data['articles'][i]['urlToImage']})`;
+
 
         const p = paragraphs[i];
         p.innerHTML = data['articles'][i]['content'];

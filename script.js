@@ -1,33 +1,40 @@
-import express from 'express';
-const app = express()
-const port = 3000
-
-app.get('/noticias', async (req, res) => {
-    const news = [];
+ async function fetchIfrnNews() {
     try {
-        const response = await fetch(`https://newsapi.org/v2/everything?language=pt&q=economia&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a`);
+        const response = await fetch('https://newsapi.org/v2/everything?language=pt&q=brasileirao&sortBy=publishedAt&apiKey=14b670b7093c4cf39fd40f4ca0892f5a');
         if (!response.ok) {
-            throw new Error(`chave inválida! status: ${response.status}`);
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
+        const data = await response.json();
 
-        const resultJson = await response.json();
-
-        const articles = resultJson['articles'];
-
-        for (let i = 0; i < articles.length; i++) {
-            const title = articles[i]['title'];
-            const description = articles[i]['description'];
-            const content = articles[i]['content'];
-            const source = articles[i]['source']['name'];
-            const data = {'titulo' : title, 'descricao' : description, 'conteudo' : content, 'fonte' : source};
-            news.push(data)
-        }
-        res.send(news)
+        updateNews(data);
     } catch (error) {
-        throw new Error(`Nada encontrado! status: ${response.status}`);
-    };
-})
+        console.error(error);
+    }
+}
 
-app.listen(port, () => {
-    console.log(`g2 back is listening on port ${port}`)
-})
+function updateNews(data) {
+    const elems = document.getElementsByClassName("title");
+    const paragraphs = document.getElementsByClassName('content');
+    const cards = document.querySelectorAll('.card');
+    const imgs = document.querySelector('.img-noticia');
+
+    for (let i = 0; i < elems.length; i++) {
+        const elem = elems[i];
+        elem.innerHTML = data['articles'][i]['title'];
+
+        const card = cards[i];
+        card.style.backgroundImage = `url(${data['articles'][i]['urlToImage']})`;
+
+        const p = paragraphs[i];
+        p.innerHTML = data['articles'][i]['content'];
+
+        imgs.src = data['articles'][i]['urlToImage'];
+
+    }
+
+
+}
+
+fetchIfrnNews().catch((error) => {
+    console.error(error);
+});

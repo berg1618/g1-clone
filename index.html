@@ -1,83 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>g2</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="pages/layout/layout.css" />
-  </head>
+    <title>g2 - O portal de notícias do Ifrn</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+    <link rel="shortcut icon" href="../assets/favicon-g2.png" type="assets/g1-favicon.avif">
+    <script src="https://kit.fontawesome.com/1e592b5726.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div id="header"><object type="text/html" data="./layout/header.html"></object></div> -->
+    <header>
+      <nav>
+        <ul class="nav-bar">
+          <li>
+            <a class="logo-projeto" href="/index.html">g2</a>
+            </li>
+            <li>
+            <a href="/index.html">Principal</a>
+            </li>
+            <li>
+            <a href="/pages/noticia.html">Noticias</a>
+            </li>
+            <li>
+            <a href="">Politica</a>
+            </li>
+            <li>
+            <a href="#">Esportes</a>
+            </li>
+        </ul>
+        <form action="#" method="post" class="search-form">
+          <button type="submit"><i class="fas fa-search"></i></button>
+          <input type="text" name="search" id="search" placeholder="BUSCAR" required>
+        </form>
+        <div class="login-btn" onclick="window.location.href='/pages/login.html';">
+          <i class="fas fa-user"></i>
+          <a class="conta-nome" href="#">Conta</a>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="section-wrapper">
+          <div class="composed-cards">
+              <article id="card" class="card card1">
+                <h1 class="title">(NOTICIA0)</h1>
+                <p class="content">noticia 0</p>
+              </article>
 
-  <body>
-    <div id="header">
-      <object type="text/html" data="pages/layout/header.html"></object>
-    </div>
-    <section>
-      <div class="noticia-card">
-        <article>
-          <h2 class="title">Lorem Ipsum</h2>
-          <p class="content">
-            " X Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit..."
-          </p>
-        </article>
+              <article id="card" class="card card2">
+                <h1 class="title">(NOTICIA1)</h1>
+                <p class="content">noticia1</p>
+              </article>
+
+              <article id="card" class="card card3">
+                <h1 class="title">(NOTICIA2)</h1>
+                <p class="content">noticia2</p>
+              </article>
+
+              <article id="card" class="card card4">
+                <h1 class="title">(NOTICIA3)</h1>
+                <p class="content">noticia3</p>
+              </article>
+
+              <article id="card" class="card card5">
+                <h1 class="title">(NOTICIA4)</h1>
+                <p class="content">noticia4</p>
+              </article>
+
+              <article id="card" class="card card6">
+                <h1 class="title">(NOTICIA4)</h1>
+                <p class="content">noticia4</p>
+              </article>
+
       </div>
-      <div class="composed-cards">
-        <article class="card1">
-          <h2 class="title">Lorem Ipsum</h2>
-          <p class="content">
-            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-            consectetur, adipisci velit..."
-          </p>
-        </article>
-        <article class="card2">
-          <h2 class="title">Lorem Ipsum</h2>
-          <p class="content">Lorem Ipsum, i gotta feed these folks</p>
-        </article>
+          <div class="composed-cards2">
+      <article id="card" class="card card6">
+        <h1 class="title">(NOTICIA4)</h1>
+        <p class="content">noticia4</p>
+      </article>
       </div>
     </section>
-    <main>
-      <article class="noticia">
-        <img class="img-noticia" src="assets/twitter.jpg" /><img />
-        <a class="title" href="./pages/noticia.html">
-          REDE SOCIAL "X" pode ser banida da EUROPA x
-        </a>
-        <p class="content">
-          REDE SOCIAL "X" pode ser banida da EUROPA Sonia Blota, correspondente
-          da Rádio Bandeirantes, fala sobre a disseminação de fake news pela
-          rede social "X" e o possível banimento.
-        </p>
-      </article>
-      <article class="noticia">
-        <img
-          class="img-noticia"
-          src="assets/twitter.jpg"
-          href="./pages/noticia.html"
-        /><img />
-        <a class="title" href="./pages/noticia.html">
-          REDE SOCIAL "X" pode ser banida da EUROPA x
-        </a>
-        <p class="content">
-          REDE SOCIAL "X" pode ser banida da EUROPA Sonia Blota, correspondente
-          da Rádio Bandeirantes, fala sobre a disseminação de fake news pela
-          rede social "X" e o possível banimento.
-        </p>
-      </article>
-      <article class="noticia" href="./pages/noticia.html">
-        <img class="img-noticia" src="assets/twitter.jpg" /><img />
-        <a class="title" href="./pages/noticia.html">
-          REDE SOCIAL "X" pode ser banida da EUROPA x
-        </a>
-        <p class="content">
-          REDE SOCIAL "X" pode ser banida da EUROPA Sonia Blota, correspondente
-          da Rádio Bandeirantes, fala sobre a disseminação de fake news pela
-          rede social "X" e o possível banimento.
-        </p>
-      </article>
-    </main>
-    <div id="footer">
-      <object type="text/html" data="pages/layout/footer.html"></object>
+      
+    <div class="noticias-mundo">
+      <h1>Mais Noticias sobre o Mundo</h1>
+      <a class="title" href="./pages/noticia.html">
+        REDE SOCIAL "X" pode ser banida da EUROPA x
+      </a>
+      <br>
+      
+      <br>
     </div>
+
+    <br>
+      <main class="main-sec">
+          <article id="card" class="card card9">
+            <h1 class="title">(NOTICIA4)</h1>
+            <p class="content">noticia4 </p>
+          </article>
+
+          <article id="card" class="card card7">
+            <h1 class="title">(NOTICIA4)</h1>
+            <p class="content">noticia4</p>
+          </article>
+          <article id="card" class="card card8">
+            <h1 class="title">(NOTICIA4)</h1>
+            <p class="content">noticia4</p>
+          </article>
+    </main> 
+  
+    
+    <br>
+    <br>
+          <img class="img-noticia">
+          <br>
+</div>
+    <footer>
+      <p class="logo-projeto-footer">g2</p>
+      <br>
+      <p>&copy; 2023 g2</p>
+    </footer>
   </body>
   <script type="module" src="./script.js"></script>
 </html>
